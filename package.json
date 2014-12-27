@@ -1,0 +1,38 @@
+{
+    "name": "async-game-server",
+    "description": "MultiChannel Game Server",
+    "version": "0.0.1",
+    "main": "server.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/mocha tests/unit/**/*.js --reporter spec",
+        "cover": "node node_modules/istanbul/lib/cli.js cover --dir artifacts -- ./node_modules/mocha/bin/_mocha tests/unit/**/*.js --reporter spec"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com/"
+    },
+    "dependencies": {
+        
+        "async": "~0.2.8",
+        "express": "~3.4.0",
+        "lodash": "*",
+        "request": "~2.27.0"
+    },
+    "devDependencies": {
+        "chai": "~1.6",
+        "istanbul": "~0.1",
+        "mocha": "~1.9",
+        "mockery": "*",
+        "xunit-file": "~0.0.3"
+    },
+    "author": "Scott Haines <newfrontcreative@gmail.com>",
+    "keywords": [
+        "async-game-server",
+        "games"
+    ],
+    "license": "BSD",
+    "readmeFilename": "README.md"
+}
