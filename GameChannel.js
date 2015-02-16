@@ -13,7 +13,7 @@ GameChannel.prototype = {
         console.log("sending message to channel with message " + message);
 
         for (var connection in this.connections) {
-            self.connections[connection].connection.write(message);
+            this.connections[connection].connection.write(message);
             console.log(this.connections[connection].uuid);
         }
     },
